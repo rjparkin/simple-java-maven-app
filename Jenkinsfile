@@ -22,7 +22,6 @@ pipeline {
         sh './jenkins/scripts/deliver.sh'
         input 'Finished using the web site? (Click "Proceed" to continue)'
         echo 'your software has been delivered'
-        emailext(subject: 'Jenkins ', body: 'Jenkins is emailing you', to: 'richard.parkin@picsolve.com')
       }
     }
   }
